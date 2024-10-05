@@ -1,0 +1,75 @@
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.abhead{
+    margin: 3.13rem 0;
+    cursor: pointer;
+    text-align: center;
+}
+.abhead h1{
+    font-size: 2.81rem;
+}
+.abhead h1 span{
+    color: var(--yel-color);
+}
+.abhead h1::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.19rem;
+    top: 130rem;
+    left: 34rem;
+    z-index: 999;
+    background: var(--yel-color);
+    transition: 0.8s;
+}
+.abhead h1:hover::after{
+    width: 16rem;
+}
+.about-container .about-img{
+    border: 2px solid var(--primary-color);
+    margin-left: 5%;
+}
+.about-img img{
+    height: 78vh;
+    width: 54vw;
+}
+.about-container .aboutus{
+    margin-left: 3%;
+    margin-right: 6%;
+}
+
+.about-container .aboutus h1{
+    font-size: 2.94rem;
+}
+.about-container .aboutus p.abpara1,
+.about-container .aboutus p.abpara2,
+.about-container .aboutus p.abpara3,
+.about-container .aboutus p.abpara4{
+    margin-top: 0.75rem;
+}
+
+.about-container .aboutus .fclassbtn1{
+    line-height: 5rem;
+    font-size: 1rem;
+    padding: 0.63rem 2.19rem;
+    color: var(--btn-color);
+    border: none;
+    border-radius: 1.25rem;
+    background-color: var(--yel-color);
+    cursor: pointer;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.about-container .aboutus .fclassbtn1:hover{
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+
+
+/* Responsive */

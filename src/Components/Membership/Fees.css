@@ -1,0 +1,92 @@
+.fees{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.plan h1{
+    font-size: 2.81rem;
+    cursor: pointer;
+}
+.plan h1 span{
+    color: var(--yel-color);
+}
+.plan h1::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.19rem;
+    top: 48rem;
+    left: 34rem;
+    z-index: 999;
+    background: var(--yel-color);
+    transition: 0.8s;
+}
+.plan h1:hover::after{
+    width: 17rem;
+}
+.fees-container {
+    height: auto;
+    width: 170vh;
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fees-container .pricing{
+    height: 23.13rem;
+    width: 18.75rem;
+    margin: 0 0.94rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    box-shadow: -4px -4px 6px 5px var(--fe-box-shadow);
+    transition: 0.4s;
+}
+.fees-container .pricing:hover{
+    transform: scale(1.06);
+    border: 2px solid rgba(255, 255, 255,0.6);
+}
+.fees-container .pricing p .i{
+    font-size: 2rem;
+    margin: 1.44rem 0px 0px;
+    color: var(--falayer-check);
+}
+.fees-container .pricing .plan-para{
+    text-align: start;
+    margin-left: 3rem;
+}
+.fees-container .pricing .plan-para p .i-check{
+    color: var(--falayer-check);
+    margin-right: 1rem;
+}
+.fees-container .pricing .head3{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.94rem 0 0.63rem;
+}
+.fees-container .pricing .head2{
+    font-size: 1.6rem;
+    color: var(--falayer-check);
+}
+.fees-container .pricing p{
+    line-height: 1.88rem;
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+.fees-container .pricing .buybtn{
+    margin-top: 0.81rem;
+    font-size: 1rem;
+    padding: 0.63rem 2.19rem;
+    color: var(--btn-color);
+    border: none;
+    border-radius: 1.25rem;
+    background-color: var(--yel-color);
+    cursor: pointer;
+    font-style: italic;
+    transition: 0.4s;
+}
+.fees-container .pricing .buybtn:hover{
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
